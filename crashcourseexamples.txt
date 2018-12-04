@@ -1,0 +1,35 @@
+() - tuples
+{} - dicts/sets
+[] - lists
+  # use negative values to address backwards from last item of a nonempty
+
+listvar.append('item')
+listvar.insert(3, 'item')
+del listvar[0]
+poppedvar = listvar.pop()  # default last item in list, can address index with param
+listvar.remove('item')
+listvar.sort()             # mutates
+listvar.sort(reverse=True) # mutates
+sorted(listvar)            # does not mutate
+listvar.reverse()
+
+list(range(3))
+
+digits = [1,2,3,4,5]
+min(digits)
+max(digits)
+sum(digits)
+
+somelist = []
+for x in range(3):
+  somelist.append(x**2)
+
+-versus-
+
+somelist = [x**2 for x in range(3)]   # list comprehension - combine looping, alloc/appending
+{x: x**2 for x in (2, 4, 6)}
+sorted(mydic, key=mydic.get)     # returns sort by value
+
+listvar[:]     # allocate new
+
+

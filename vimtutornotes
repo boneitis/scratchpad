@@ -40,7 +40,10 @@ v - visual select
 
 R - Replace mode (a la traditional Insert)
 
-:set ic - ignore case
-:set noic
-:set incsearch
-:set hls is
+:set <option>
+
+'ic' 'ignorecase'
+'is' 'incsearch'
+'hls' 'hlsearch'
+prepend option with 'no'
+

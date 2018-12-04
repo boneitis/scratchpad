@@ -1,0 +1,46 @@
+o - insert newline below, enter insert mode
+O - insert newline above, enter insert mode
+Shift+A - append at end of line
+y - yank
+
+short list of motions:
+  w - until the start of the next word, EXCLUDING its first character.
+  e - to the end of the current word, INCLUDING the last character.
+  $ - to the end of the line, INCLUDING the last character.
+
+Shift+U to undo all changes on a line
+
+c - change operator
+  ce - change until end of word
+  c$ - change until end of line
+
+Ctrl-g - file loc, file status
+G - linenumber seek, default eof
+
+/ - search
+? - search backward
+N - move opposite from search direction
+
+Ctrl-O - move backward in cursor history
+Ctrl-I - forward
+
+% - move to opposite bracket; ()[]{}
+
+:s/old/new	- first occurrence in current line
+:s/old/new/g	- all occurrences in current line
+:#,#s/old/new/g	- range of lines
+:%s/old/new/g	- whole file
+:%s/old/new/gc	- confirm dialogue for each
+
+:!<command>	- external command
+
+v - visual select
+
+:r - insert (below current line) text from file (or program preceded by '!')
+
+R - Replace mode (a la traditional Insert)
+
+:set ic - ignore case
+:set noic
+:set incsearch
+:set hls is

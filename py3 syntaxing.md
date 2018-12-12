@@ -4,20 +4,29 @@
 shark.py
 ```python3
 class Shark:
-  def __init__(self):
-    print('This is the constructor method.')
+  def __init__(self, name):
+    self.name = name
+    print('Shark constructed.')
 
   def swim(self):
-    print('The shark is swimming.')
+    print(self.name + ' is swimming.')
 
   def be_awesome(self):
-    print('The shark is being awesome.')
+    print(self.name + ' is being awesome.')
 
 def main():
-  sammy = Shark()
+  sammy = Shark('Sammy')
   sammy.swim()
-  sammy.be_awesome()
+  carl = Shark('Carl')
+  carl.be_awesome()                                                                                                
 
 if __name__ == '__main__':
   main()
+```
+```
+$ python3 shark.py
+Shark constructed.
+Sammy is swimming.
+Shark constructed.
+Carl is being awesome.
 ```

@@ -1,0 +1,17 @@
+tmux new -s <session-name>
+"    attach -t <session-name>
+"    ls
+"    kill-session -t <session-name>
+
+c - create window
+, - rename window
+n - next
+p - prev
+w - ls windows
+t - show time
+d - detach
+
+% - split
+" - split
+o - next pane
+q - ls panes

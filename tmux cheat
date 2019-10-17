@@ -15,4 +15,4 @@ d - detach
 " - split
 o - next pane
 q - ls panes
-alt, arrow - resize pane
+alt + arrow - resize pane

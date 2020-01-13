@@ -10,9 +10,11 @@ p - prev
 w - ls windows
 t - show time
 d - detach
+[ - scrollback
 
 % - split
 " - split
 o - next pane
 q - ls panes
+z - maximize pane
 alt + arrow - resize pane

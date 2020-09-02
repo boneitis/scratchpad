@@ -4,3 +4,4 @@ set cursorline
 set list
 set listchars=eol:ϟ
 syntax on
+" :set list ; :set nolist

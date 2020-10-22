@@ -1,6 +1,19 @@
 answers to `Awk: Hack the planet['s text]!` exercises
 
-FirstName	LastName	HourlyWage	HoursWorked	Office	Title	StartDate
+exercise data, abbr.:
+
+```
+FirstName       LastName        HourlyWage      HoursWorked     Office  Title   StartDate
+Deeann  Felkins 27.13   34      Concord DevOps  1977/04/09
+Isabella        Pinnix  43.37   25      Manchester      HumanResources  1994/05/23
+Rosalyn Shain   7.8     34      Lehi    DevOps  1977/03/01
+Lyndia  Ptacek  20.31   40      Seattle SoftwareEngineer        2010/11/01
+Benjamin        Bing    47.29   28      MountainView    MechanicalEngineer      2003/04/05
+Angie   Drager  32.1    21      Manchester      DevOps  2010/10/17
+Brain   Heine   15.26   44      Raleigh MechanicalEngineer      1998/02/02
+
+```
+
 
 How much money per hour does the janitor make?
 1. $ awk '/[jJ]anitor/ { print $3 }' payroll.tsv

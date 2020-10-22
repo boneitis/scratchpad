@@ -82,10 +82,10 @@ END { printf("This company has %d office locations.\n", cities); }
 
 
 What is the average (mean) wage of all employees? What about the median (extra credit)?
-
+16.
 
 Are there any duplicate entries? (Same names appearing on payroll more than once)
-16.
+17.
 {
   if ( myarr[sprintf("%s %s", $1, $2)] == "yes" )
     printf("%s %s\n", $1, $2);

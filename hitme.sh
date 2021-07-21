@@ -1,7 +1,7 @@
 #!/bin/bash
 cd ~
 wget https://github.com/boneitis/scratchpad/raw/master/.vimrc
-https://github.com/boneitis/scratchpad/raw/master/.tmux.conf
+wget https://github.com/boneitis/scratchpad/raw/master/.tmux.conf
 mkdir .vim
 cd .vim
 mkdir colors

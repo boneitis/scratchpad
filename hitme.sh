@@ -1,4 +1,5 @@
 #!/bin/bash
+# curl https://raw.githubusercontent.com/boneitis/scratchpad/master/hitme.sh |bash
 cd ~
 wget https://github.com/boneitis/scratchpad/raw/master/.vimrc
 wget https://github.com/boneitis/scratchpad/raw/master/.tmux.conf

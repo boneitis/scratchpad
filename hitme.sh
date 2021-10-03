@@ -9,3 +9,9 @@ cd .vim
 mkdir colors
 cd colors
 wget https://github.com/boneitis/oceanic-material/raw/master/colors/oceanic_material.vim
+
+## .bashrc ##
+# alias pyg='pygmentize -g'
+# alias sshgoo='ssh -A -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ConnectTimeout=10'
+# alias scpgoo='scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ConnectTimeout=10'
+# alias sshfsgoo='sshfs -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ConnectTimeout=10'

@@ -1,6 +1,12 @@
 #!/bin/bash
 # curl https://raw.githubusercontent.com/boneitis/scratchpad/master/hitme.sh |sh
+
+#### DOCKER
 # curl -fsSL https://get.docker.com -o get-docker.sh
+
+#### nvm
+# https://github.com/nvm-sh/nvm#install--update-script
+
 cd ~
 wget https://github.com/boneitis/scratchpad/raw/master/.vimrc
 wget https://github.com/boneitis/scratchpad/raw/master/.tmux.conf

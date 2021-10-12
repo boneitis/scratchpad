@@ -10,6 +10,7 @@
 cd ~
 wget https://github.com/boneitis/scratchpad/raw/master/.vimrc
 wget https://github.com/boneitis/scratchpad/raw/master/.tmux.conf
+wget https://github.com/boneitis/scratchpad/raw/master/.gitconfig
 mkdir .vim
 cd .vim
 mkdir colors

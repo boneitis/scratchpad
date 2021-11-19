@@ -1,0 +1,6 @@
+#!/data/data/com.termux/files/usr/bin/sh
+if FETCH_LINK=$(streamlink --stream-url https://twitch.tv/$1 audio_only); then
+  am start -a android.intent.action.VIEW -t audio/mp4 -d $FETCH_LINK;
+else
+  echo $FETCH_LINK;
+fi

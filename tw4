@@ -1,0 +1,6 @@
+#!/data/data/com.termux/files/usr/bin/sh
+if FETCH_LINK=$(streamlink --stream-url --stream-sorting-excludes ">480p60" https://twitch.tv/$1 best); then
+  am start -a android.intent.action.VIEW -t video/mpeg -d $FETCH_LINK;
+else
+  echo $FETCH_LINK;
+fi

@@ -1,0 +1,4 @@
+#!/data/data/com.termux/files/usr/bin/sh
+echo "IPv4 TTL (65 desired, 64 default): "
+su root -c 'cat /proc/sys/net/ipv4/ip_default_ttl'
+

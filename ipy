@@ -1,0 +1,27 @@
+## /usr/bin/mate-terminal -e "/usr/bin/python3 -i '/home/$(whoami)/.local/bin/ipy'"    ### doesn't actually work; hardcode the username
+
+#!/usr/bin/python3
+from base64 import b64encode as be, b64decode as bd
+print("\
+from base64 import b64encode as be, b64decode as bd\
+")
+
+from binascii import hexlify as hexl, unhexlify as unhexl
+print("\
+from binascii import hexlify as hexl, unhexlify as unhexl\
+")
+
+from Crypto.Random import get_random_bytes as grb
+print("\
+from Crypto.Random import get_random_bytes as grb\
+")
+
+from Crypto.Random.random import randint
+print("\
+from Crypto.Random.random import randint      # PARAMS (a, b) INCLUSIVE")
+
+from urllib.parse import quote, unquote
+print("\
+from urllib.parse import quote, unquote \n\n\
+")
+

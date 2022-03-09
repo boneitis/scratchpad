@@ -18,7 +18,13 @@ from Crypto.Random import get_random_bytes as grb\
 
 from Crypto.Random.random import randint
 print("\
-from Crypto.Random.random import randint      # PARAMS (a, b) INCLUSIVE")
+from Crypto.Random.random import randint      # PARAMS (a, b) INCLUSIVE\
+")
+
+from Crypto.Hash import SHA1, SHA256
+print("\
+from Crypto.Hash import SHA1, SHA256\
+")
 
 from urllib.parse import quote, unquote
 print("\

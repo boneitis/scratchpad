@@ -1,6 +1,9 @@
 ## /usr/bin/mate-terminal -e "/usr/bin/python3 -i '/home/$(whoami)/.local/bin/ipy'"    ### doesn't actually work; hardcode the username
 
 #!/usr/bin/python3
+from sys import version
+print('py' + version + '\n')
+
 from base64 import b64encode as be, b64decode as bd
 print("\
 from base64 import b64encode as be, b64decode as bd\
@@ -28,6 +31,6 @@ from Crypto.Hash import SHA1, SHA256\
 
 from urllib.parse import quote, unquote
 print("\
-from urllib.parse import quote, unquote \n\n\
+from urllib.parse import quote, unquote \n\
 ")
 

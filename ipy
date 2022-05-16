@@ -29,6 +29,11 @@ print("\
 from Crypto.Hash import SHA1, SHA256\
 ")
 
+from Crypto.Cipher import AES
+print("\
+from Crypto.Cipher import AES\
+")
+
 from urllib.parse import quote, unquote
 print("\
 from urllib.parse import quote, unquote \n\

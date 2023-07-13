@@ -4,6 +4,11 @@
 from sys import version
 print('py' + version + '\n')
 
+from os import getcwd, chdir
+print("\
+from os import getcwd, chdir\
+")
+
 from base64 import b64encode as be, b64decode as bd
 print("\
 from base64 import b64encode as be, b64decode as bd\
@@ -36,6 +41,12 @@ from Crypto.Cipher import AES\
 
 from urllib.parse import quote, unquote
 print("\
-from urllib.parse import quote, unquote \n\
+from urllib.parse import quote, unquote\
 ")
+
+from re import findall
+def gstrip(URLFLUF):
+  print('\n' + findall('https:\/\/www\.google\.com\/url\?q=(.*)&sa=D&sntz', unquote(URLFLUF))[0])
+
+print("import gURL strip function `gstrip()`\n")
 

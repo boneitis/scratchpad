@@ -46,7 +46,7 @@ from urllib.parse import quote, unquote\
 
 from re import findall
 def gstrip(URLFLUF):
-  print('\n' + findall('https:\/\/www\.google\.com\/url\?q=(.*)&sa=D&sntz', unquote(URLFLUF))[0])
+  print('\n' + findall('https:\/\/www\.google\.com\/url\?q=(.*)&sa=D&', unquote(URLFLUF))[0])
 
 print("import gURL strip function `gstrip()`\n")
 

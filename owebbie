@@ -1,0 +1,12 @@
+#!/bin/bash
+
+read -sp "read WEBUI_SECRET_KEY: " WEBUI_SECRET_KEY
+echo
+read -sp "read ANTHROPIC_API_KEY: " ANTHROPIC_API_KEY
+echo
+echo
+
+export WEBUI_SECRET_KEY
+export ANTHROPIC_API_KEY
+pipx upgrade open-webui && open-webui serve --host 127.0.0.1 --port 8000
+

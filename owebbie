@@ -1,12 +1,20 @@
 #!/bin/bash
 
-read -sp "read WEBUI_SECRET_KEY: " WEBUI_SECRET_KEY
+read -sp "OAI: read WEBUI_SECRET_KEY: " WEBUI_SECRET_KEY
 echo
-read -sp "read ANTHROPIC_API_KEY: " ANTHROPIC_API_KEY
+echo "  SHA: $(echo -n "$WEBUI_SECRET_KEY" | sha1sum | awk '{ print $1 }' | tail -c9)"
 echo
+read -sp "CLA: read ANTHROPIC_API_KEY: " ANTHROPIC_API_KEY
+echo
+echo "  SHA: $(echo -n "$ANTHROPIC_API_KEY" | sha1sum | awk '{ print $1 }' | tail -c9)"
+echo
+read -p "OK?" foovar
+echo
+echo "GO"
 echo
 
 export WEBUI_SECRET_KEY
 export ANTHROPIC_API_KEY
+
 pipx upgrade open-webui && open-webui serve --host 127.0.0.1 --port 8000
 
